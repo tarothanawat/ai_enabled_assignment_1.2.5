@@ -1,0 +1,381 @@
+#1 From Models to Systems 
+T h a n a p a t  K a n g k a c h i t
+M A R  1 0   2 0 2 6
+th
+01219462 
+101219462 Software Engineering for AI-Enabled System
+
+Explain how machine learning fits into the
+larger picture of building and maintaining
+product on systems
+Explain the consequences of the shift from
+deductive to inductive reasoning for
+abstraction and composition
+Explain the modularity implications of
+having machine-learning components
+without specifications
+Describe the typical components relating to
+AI in an AI-enabled system and typical
+design decisions to be made
+L e a r n i n g  G o a l s
+2
+
+ML Models as Part of a System
+1) Machine learning as (small) component in a system
+2) Machine learning as (core) component in a system
+3
+
+1) ML as (small) component in a system
+4
+Traditional non-ML tax software, 
+with an added ML component for audit risk estimation.
+ 
+
+1) ML as (small) component in a system
+5
+
+1) ML as (small) component in a system
+6
+Here are several examples where machine learning serves 
+as a small but impactful component within larger systems
+1. Email Spam Filtering in a Communication Platform
+2. Product Recommendation in an E-commerce Website
+3. Chatbots for Customer Support
+etc.
+
+2) ML as (core) component in a system
+7
+ Transcription service, 
+where interface is all built around an ML component.
+ 
+ 
+
+2) ML as (core) component in a system
+8
+ Transcription service, 
+where interface is all built around an ML component.
+ 
+ 
+
+2) ML as (core) component in a system
+9
+ Red Light Camera (RLC),
+where interface is all built around an ML component.
+ 
+
+
+2) ML as (core) component in a system
+10
+ Red Light Camera (RLC),
+where interface is all built around an ML component.
+ 
+Before violation After violation License plate
+
+2) ML as (core) component in a system
+AI/ML
+components
+are 
+core parts 
+of 
+a large system
+Red light camera
+11
+
+Many more examples of ML in products
+12
+
+Product recommendations on Amazon
+Inventory planning in Walmart
+Search for new oil fields by Shell
+Tracking and predicting infections in a pandemic
+Some for end users, some for employees, some for expert users
+Big and small components of a large system
+More or less non-ML code around model
+Many more examples of ML in products
+13
+
+
+Activity  2.1 [10 minutes]
+14
+1) Give 2 examples of ML in applications where ML is a small
+component and 2 examples where ML is a core component, and
+briefly explain the impact of the ML component on the overall system
+in each case.
+2) For your IS or your interest application, 
+justify whether ML is a small or core component 
+briefly explain its impact on the overall system
+specify the target users 
+
+Model-Centric VS System-Wide Focus
+15
+ Traditional Model Focus (Data Science)
+Focus: 
+building models from given data, evaluting accuracy
+ 
+ 
+
+Model-Centric VS System-Wide Focus
+16
+Automating Pipelines and MLOps (ML Engineering)
+Focus: 
+experimenting, deploying, scaling training and serving, 
+model monitoring and updating 
+ 
+
+Model-Centric VS System-Wide Focus
+17
+MLOps infrastructure
+Figure from Google’s 2015 technical debt paper, indicating that the amount of code for actual model training is
+comparably small compared to lots of infrastructure code needed to automate model training, serving, and
+monitoring. These days, much of this infrastructure is readily available through competing MLOps tools (e.g.,
+serving infrastructure, feature stores, cloud resource management, monitoring)
+ 
+
+
+Model-Centric VS System-Wide Focus
+18
+ML-Enabled Systems (ML in Production)
+Interaction of ML and non-ML components, system requirements, 
+user interactions, safety, collaboration, delivering products 
+ 
+
+Explain how machine learning fits into the
+larger picture of building and maintaining
+product on systems
+Explain the consequences of the shift from
+deductive to inductive reasoning for
+abstraction and composition
+Explain the modularity implications of
+having machine-learning components
+without specifications
+Describe the typical components relating to
+AI in an AI-enabled system and typical
+design decisions to be made
+L e a r n i n g  G o a l s
+19
+
+Model vs System Goals
+20
+Case Study: Self-help Legal Chatbot
+Based on the excellent paper: Passi, S., & Sengers, P. (2020). Making data science systems work .
+Big Data & Society, 7(2) 
+ 
+
+Case Study: Self-help Legal Chatbot
+21
+Previous System: Guided Chat
+ Image source: https://www.streamcreative.com/chatbot-scripts-examples-templates
+ 
+ 
+Problems with  Guided Chat
+- Deductive reasoning (rules-based)
+
+Case Study: Self-help Legal Chatbot
+22
+Initial Goal: Better Chatbot
+Help users with simple task
+Connect them with lawyers when needed
+Modernize appearance; “Future of digital marketing”
+
+Case Study: Self-help Legal Chatbot
+23
+Buy or Build?
+ One of many commercial frameworks for building AI chatbots
+
+Case Study: Self-help Legal Chatbot
+24
+Data Scientists’ challenges
+
+
+Case Study: Self-help Legal Chatbot
+25
+Stepping Back:
+What are the
+goals of the
+system?
+
+
+Case Study: Self-help Legal Chatbot
+26
+Stepping Back:
+What are the
+goals of the
+system?
+
+
+Case Study: Self-help Legal Chatbot
+27
+More Accurate Predictions may not be THAT IMPORTANT!!!!
+
+Activity  2.2 [5-10 minutes]
+28
+ For your senior project or an application of your interest,  
+specify ML component(s) in a system
+justify system goals for ML components 
+ 
+
+Explain how machine learning fits into the
+larger picture of building and maintaining
+product on systems
+Explain the consequences of the shift from
+deductive to inductive reasoning for
+abstraction and composition
+Explain the modularity implications of
+having machine-learning components
+without specifications
+Describe the typical components relating to
+AI in an AI-enabled system and typical
+design decisions to be made
+L e a r n i n g  G o a l s
+29
+
+Systems Thinking
+30
+
+The System Interacts with Users
+31
+
+The System Interacts with the World
+32
+Predictive Policing
+Decide where to allocate police patrol 
+Model: 
+Use historical data to predict crime rates by
+neighborhoods 
+
+The System Interacts with the World
+33
+
+The System Interacts with the World
+34
+ ML Predictions have Consequences
+Assistance, productivity, creativity  (+)
+Manipulation, polarization, discrimination (-) 
+Feedback loops
+➤  Need for responsible engineering 
+ 
+
+Safety is a System Property
+35
+Code/models are not unsafe, cannot harm people
+Systems can interact with the environment in ways that are unsafe
+ Goal: 
+Ensure smart toaster 
+does not burn the kitchen 
+ 
+
+Safety Assurance in/outside the Model
+36
+
+Model vs System Properties
+37
+
+
+Think about Systems
+38
+
+
+System-Level Challenges for AI-Enabled Systems
+39
+
+Activity  2.3 [10 minutes]
+40
+For your senior project or an application of interest:
+give discussion about safety assurance 
+choose at least one important quality other than model accuracy
+at system level and give a brief discussion
+ 
+
+Explain how machine learning fits into the
+larger picture of building and maintaining
+product on systems
+Explain the consequences of the shift from
+deductive to inductive reasoning for
+abstraction and composition
+Explain the modularity implications of
+having machine-learning components
+without specifications
+Describe the typical components relating to
+AI in an AI-enabled system and typical
+design decisions to be made
+L e a r n i n g  G o a l s
+41
+
+Designing Intelligent Experiences (Human-AI Interaction)
+42
+
+AI predictions should influence the world
+43
+Interact with the world 
+through actuators 
+or by influencing people
+ 
+ 
+
+Designing Intelligent Experiences
+44
+How to use the output of a model's prediction (for a objective)
+ 
+
+Presenting Intelligence 
+45
+
+Factors to Consider 
+46
+
+Choose only one of the followings / senior project /  an your interest application:
+(1) How do we present 
+the intelligence to the user? 
+(2) Justify in terms of 
+system goals
+forcefulness
+frequency
+value of correct 
+       and cost of wrong predictions
+Activity  2.4 [5-10 minutes]
+47
+
+Operating Production ML Systems [Deployment, Updates]
+48
+
+
+Operating Production ML Systems [Deployment, Updates]
+49
+
+Monitoring in Production
+50
+Design for Telemetry
+
+Monitoring in Production
+51
+
+Design with Pipeline and Monitoring
+52
+
+
+Pipeline Thinking is Challenging
+53
+
+
+Summary 
+54
+
+
+Enhance a web-based application using ML component(s) 
+(1) Create a Web-Based Personal Gallery:  
+Develop a platform that allows users to browse and upload
+multiple images to create albums.
+(2) Enhance with Image Captioning: 
+Integrate an ML component to provide image captions while
+browsing images by calling the API from Hugging Face's
+Salesforce/blip-image-captioning-base
+** Suggestion: Use Python with Flask
+** Submission: Upload the code along with prediction samples to
+your GitHub repository
+Activity  2.5  [Programming; ]
+55
+
+56
+References:
+[1] From Models to Systems;  https://ckaestne.github.io/seai/F2022/slides/02_systems/systems.pdf
+[2] https://huggingface.co/Salesforce/blip-image-captioning-base

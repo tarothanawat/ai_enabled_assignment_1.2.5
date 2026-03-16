@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.env.*
+uploads/
+*.log
+.DS_Store
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+
+# Python packaging/build
+build/
+dist/
+*.egg-info/
+
+# Model/cache artifacts
+.cache/
+hf_home/
