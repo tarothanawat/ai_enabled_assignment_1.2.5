@@ -54,9 +54,23 @@ This project implements the assignment requirement from the slides:
 
 - [x] Source code uploaded
 - [x] ML integration with Hugging Face BLIP endpoint
-- [ ] Add your own prediction evidence in `prediction_samples.md`
-  - Include sample image names and generated captions
-  - Optionally include screenshots
+- [ ] Add your own prediction evidence in this README
+   - Include sample image names and generated captions
+   - Optionally include screenshots
+
+## Sample images
+
+### Green bottle
+
+![Green bottle sample](sample_images/green_bottle.png)
+
+### Cat on computer
+
+![Cat on computer sample](sample_images/cat_on_computer.png)
+
+### Baby
+
+![Baby sample](sample_images/baby.png)
 
 ## Notes
 
